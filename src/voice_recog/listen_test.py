@@ -40,11 +40,11 @@ def main() -> int:
 
     model = Model(args.model)
     grammar = [
-    "callie connect to talkgroup two three five six one",
+    "Kali connect to talkgroup two three five six one",
     "connect to talkgroup two three five six one",
     "[unk]",
     ]
-    
+
     recogniser = KaldiRecognizer(
         model,
         SAMPLE_RATE,
