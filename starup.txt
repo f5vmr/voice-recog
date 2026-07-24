@@ -1,0 +1,20 @@
+voice_recog/
+├── README.md
+├── pyproject.toml
+├── config/
+│   └── voice_recog.ini.example
+├── sounds/
+│   └── en_GB/
+├── src/
+│   └── voice_recog/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── grammar.py
+│       ├── number_parser.py
+│       ├── dtmf_writer.py
+│       └── config.py
+├── systemd/
+│   └── voice-recog.service
+└── tests/
+    ├── test_grammar.py
+    └── test_number_parser.py
