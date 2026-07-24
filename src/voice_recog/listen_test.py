@@ -11,7 +11,7 @@ import sounddevice as sd
 from vosk import KaldiRecognizer, Model
 
 
-SAMPLE_RATE = 16000
+SAMPLE_RATE = 48000
 AUDIO_QUEUE: queue.Queue[bytes] = queue.Queue()
 
 
