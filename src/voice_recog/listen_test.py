@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import argparse
 import json
+from pyexpat import model
+from pyexpat import model
 import queue
 import sys
 
@@ -37,7 +39,21 @@ def main() -> int:
     args = parser.parse_args()
 
     model = Model(args.model)
-    recogniser = KaldiRecognizer(model, SAMPLE_RATE)
+    grammar = [
+    "callie",
+    "connect to talkgroup",
+    "connect talkgroup",
+    "disconnect",
+    "status",
+    "zero one two three four five six seven eight nine",
+    "[unk]",
+    ]
+
+    recogniser = KaldiRecognizer(
+    model,
+    SAMPLE_RATE,
+    json.dumps(grammar),
+    )
 
     print("Listening. Press Ctrl-C to stop.")
 
