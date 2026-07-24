@@ -40,7 +40,7 @@ def main() -> int:
 
     model = Model(args.model)
     grammar = [
-    "Kelly connect to talk group two three five six one",
+    "Charlie connect to talk group two three five six one",
     "connect to talk group two three five six one",
     "[unk]",
     ]
