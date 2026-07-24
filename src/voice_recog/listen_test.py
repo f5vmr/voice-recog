@@ -40,19 +40,15 @@ def main() -> int:
 
     model = Model(args.model)
     grammar = [
-    "callie",
-    "connect to talkgroup",
-    "connect talkgroup",
-    "disconnect",
-    "status",
-    "zero one two three four five six seven eight nine",
+    "callie connect to talkgroup two three five six one",
+    "connect to talkgroup two three five six one",
     "[unk]",
     ]
-
+    
     recogniser = KaldiRecognizer(
-    model,
-    SAMPLE_RATE,
-    json.dumps(grammar),
+        model,
+        SAMPLE_RATE,
+        json.dumps(grammar),
     )
 
     print("Listening. Press Ctrl-C to stop.")
